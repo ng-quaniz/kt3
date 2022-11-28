@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageButton
+        android:id="@+id/dtback"
+        android:layout_marginTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back" />
+    <TextView
+        android:layout_below="@id/dtback"
+        android:id="@+id/phep"
+        android:text="Text"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/so1"
+        android:hint="Nhập số thứ nhất"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/phep"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/so2"
+        android:hint="Nhập số thứ hai"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/phep"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/tinh"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Tính"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/so1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@drawable/bt"/>
+
+    <TextView
+        android:id="@+id/kq"
+        android:hint="Kết quả"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tinh"/>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_below="@id/kq"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+
+
+</RelativeLayout>
